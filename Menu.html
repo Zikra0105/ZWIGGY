@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MENU </title>
+</head>
+<style>
+  p {
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+
+  }
+
+  body {
+
+    background-image: url('f4back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .menu-data {
+    padding: 4rem;
+  }
+
+  .item p {
+    display: inline-block;
+  }
+
+  .dish-name {
+    text-align: left;
+    width: 75%;
+  }
+
+  .price {
+    text-align: right;
+  }
+
+  .home {
+    background-color: purple;
+    background-image: linear-gradient(skyblue, violet);
+    font-size: 30px;
+    font-family: Comic Sans MS;
+    border-color: aliceblue;
+    border-radius: 10px;
+
+  }
+
+  img {
+    border: 5px #8ddbe2 solid;
+    border-radius: 20px;
+  }
+    
+
+  .b1,
+  .b2,
+  .b3 {
+    font-size: 30px;
+   
+    
+  }
+  
+</style>
+
+<body>
+  <script>
+    /* let bu2= 0;
+    const b1 = document.querySelector(".b1");
+    const b2 = document.querySelector(".b2");
+    const b3 = document.querySelector(".b3");
+    
+   
+     function bu1(){
+      
+         bu2++;
+         b2.innerText = bu2;
+       }
+     
+ 
+     
+       b3.addEventListener('click', bu1);
+ */
+    /*let bu2 = 0;
+            const b2 = document.querySelector(".b2");
+            const b3 = document.querySelector(".b3");
+    
+            function bu1() {
+                bu2++;
+                b2.innerText = bu2;
+            }
+    
+            b3.addEventListener('click', bu1);*/
+   /* document.addEventListener('DOMContentLoaded', (event) => {
+      let bu2 = 0;
+      const b2 = document.querySelectorAll("b2");
+      const b3 = document.querySelectorAll("b3");
+
+      function bu1() {
+        bu2++;
+        b2.innerText = bu2;
+      }
+
+      b3.addEventListener('click', bu1);
+    });*/
+    document.addEventListener('DOMContentLoaded', (event) => {
+            const buttons = document.getElementsByTagName("button");
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    let count = parseInt(button.innerText);
+                    count++;
+                    button.innerText = count;
+                });
+            });
+        });
+  </script>
+  <button class="home">
+    <a href="ZWIGGY.html" align="left">HOME </a>
+  </button>
+  <h1>
+    <p class="m" align="center"> DELECIOUS MENU :
+  </h1>
+  </p>
+  <div class="menu-data">
+    <div class="item">
+      <p class="dish-name">
+        <a href="Burger.html">BURGERS</a>
+      </p>
+      <p class="price">
+        <img src="images/Zwiggy/burger1.jpg" height="125px" width="125px">
+      </p>
+
+      <button class="b1">-</button>
+      <button class="b2">0</button>
+      <button class="b3">+</button>
+
+    </div>
+
+    <div class="item">
+      <p class="dish-name">
+        <a href="Pizza.html">PIZZA</a>
+      <p class="price">
+        <img src="images/Zwiggy/pizza.jpg" height="125px" width="125px">
+      </p>
+      <button class="b1">-</button>
+      <button class="b2">0</button>
+      <button class="b3">+</button>
+    </div>
+
+   <div class="item">
+      <p class="dish-name">
+        <a href="Wraps.html">WRAPS</a>
+      <p class="price">
+        <img src="images/Zwiggy/wraps.jpg" height="125px" width="125px" border="dotted">
+      </p>
+      <button class="b1">-</button>
+      <button class="b2">0</button>
+      <button class="b3">+</button>
+    </div>
+
+    <div class="item">
+      <p class="dish-name">
+        <a href="Momos.html">MOMOS</a>
+      <p class="price">
+        <img src="images/Zwiggy/momos.jpg" height="155px" width="155px">
+      </p>
+      <button class="b1">-</button>
+      <button class="b2">0</button>
+      <button class="b3">+</button>
+    </div>
+
+    <div class="item">
+      <p class="dish-name">
+        <a href="Chaats.html">CHAATS</a>
+      <p class="price">
+        <img src="images/Zwiggy/chaats.jpg" height="125px" width="150px">
+      </p>
+      <button class="b1">-</button>
+      <button class="b2">0</button>
+      <button class="b3">+</button>
+    </div>
+
+    <div class="item">
+      <p class="dish-name">
+        <a href="Sandwich.html">SANDWICH</a>
+      <p class="price">
+        <img src="images/Zwiggy/sandwich.jpg" height="125px" width="150px">
+      </p>
+      <button class="b1">-</button>
+      <button class="b2">0</button>
+      <button class="b3">+</button>
+    </div>
+
+    <div class="item">
+      <p class="dish-name">
+        <a href="Biryani.html">BIRYANI</a>
+      <p class="price">
+        <img src="images/Zwiggy/biryani.jpg" height="125px" width="175px">
+      </p>
+      <button class="b1">-</button>
+      <button class="b2">0</button>
+      <button class="b3">+</button>
+    </div>
+
+    <div class="item">
+      <p class="dish-name">
+        <a href="Paneer dishes.html">PANEER DISHES</a>
+      <p class="price">
+        <img src="images/Zwiggy/paneer.jpg" height="125px" width="165px">
+      </p>
+      <button class="b1">-</button>
+      <button class="b2">0</button>
+      <button class="b3">+</button>
+    </div>
+
+    <div class="item">
+      <p class="dish-name">
+        <a href="Dessert.html">DESSERT</a>
+      <p class="price">
+        <img src="images/Zwiggy/blueberry.jpg" height="175px" width="175px">
+      </p>
+      <button class="b1">-</button>
+      <button class="b2">0</button>
+      <button class="b3">+</button>
+    </div>
+
+    <div class="item">
+      <p class="dish-name">
+        <a href="Ice cream.html">ICE CREAM</a>
+      <p class="price">
+        <img src="images/Zwiggy/ice cream.jpg" height="125px" width="165px">
+
+      </p>
+      <button class="b1">-</button>
+      <button class="b2">0</button>
+      <button class="b3">+</button>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
